@@ -12,9 +12,14 @@ function App() {
         console.log(error)
       });
   }, []);
-
+                 
+  // map thru posts array and return react component PostDetail
+  const postList = posts.map((post) => <PostDetail key={post.id} post={post} />)
+  
+  // return postList via jsx
   return (
     <div className="App">
+      {postList}
     </div>
   );
 }
