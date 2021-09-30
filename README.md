@@ -1,4 +1,4 @@
-# frontend_mockinterview_posts
+# frontend_livecoding
 
 Bootcamp live coding challenge: use React framework to manage API calls and conditional rendering, allowing users to click on a post to display its comments, then click it again to hide them. 
 
