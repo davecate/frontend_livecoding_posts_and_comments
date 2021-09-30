@@ -30,8 +30,10 @@ const PostDetail = ( { post } ) => {
   return   <div>
              <h1>{post.title}</h1>
              <p onClick={clickHandler}>{post.body}</p>
-             {/* conditional render: checks boolean on left side;
-             if true, returns jsx from right side */}
+             {/* conditional render: 
+             && operator checks truth of left side (boolean only), 
+             then truth of right side (any value). 
+             if both are truthy, returns value of right side only */}
              {commentDisplay && commentList}
            </div>
 }
